@@ -11,13 +11,7 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 col-xs-6">
-                    
-                </div>
-            </div>
-        </div>
+        
     </header>
 
     <script src="/js/jquery.min.js"></script>
