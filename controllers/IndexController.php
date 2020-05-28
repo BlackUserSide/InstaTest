@@ -13,7 +13,7 @@ class IndexController extends Controller
     }
     public function index()
     {
-        $this->pageData['title'] = "INSTA";
+        $this->pageData['title'] = "LOL";
         $this->view->render($this->pageTpl, $this->pageData);
     }
 }
