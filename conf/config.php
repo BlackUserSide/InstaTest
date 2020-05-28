@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$_SERVER['DOCUMENT_ROOT'] = 'C:\Users\Xqesc\Downloads\open_server_5_3_7_basic_full\OpenServer\domains\localhost';
+$_SERVER['DOCUMENT_ROOT'] = 'C:\Users\Xqesc\Downloads\open_server_5_3_7_basic_full\OpenServer\domains\Insta';
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('CONTROLLER_PATH', ROOT. '/controllers/');
 define('MODEL_PATH', ROOT. '/models/');
