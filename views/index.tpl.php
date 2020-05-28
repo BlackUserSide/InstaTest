@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -48,16 +49,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-sm-12 col-lg-4 col-xl-4">
-                        <div class="item-wrapper">
-                            <div class="icon-wrap">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            
-                            <h3 class="name-service">1000 лайков</h3>
-                            <p class="old-price">Старая цена: <span>250грн</span></p>
-                            <p class="price">150 грн.</p>
-                            <a href="#" class="start-order">Заказать</a>
-                        </div>
+                        <?php if (!empty($pageData['liksServ'])) : ?>
+                            <?php foreach ($pageData['liksServ'] as $key => $val) { ?>
+                                <div class="item-wrapper">
+                                    <div class="icon-wrap">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+
+                                    <h3 class="name-service"><?php echo $val['name'] ?></h3>
+                                    <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
+                                    <p class="price"><?php echo $val['price'] ?> грн.</p>
+                                    <a href="#" class="start-order">Заказать</a>
+                                </div>
+                            <?php } ?>
+                        <?php endif ?>
+
                     </div>
                 </div>
             </div>
@@ -69,16 +75,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-sm-12 col-lg-4 col-xl-4">
-                        <div class="item-wrapper">
-                            <div class="icon-wrap">
-                                <i class="fas fa-user-friends"></i>
-                            </div>
-                            
-                            <h3 class="name-service">1000 лайков</h3>
-                            <p class="old-price">Старая цена: <span>250грн</span></p>
-                            <p class="price">150 грн.</p>
-                            <a href="#" class="start-order">Заказать</a>
-                        </div>
+                        <?php if (!empty($pageData['subsServ'])) : ?>
+                            <?php foreach ($pageData['subsServ'] as $key => $val) { ?>
+                                <div class="item-wrapper">
+                                    <div class="icon-wrap">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+
+                                    <h3 class="name-service"><?php echo $val['name'] ?></h3>
+                                    <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
+                                    <p class="price"><?php echo $val['price'] ?> грн.</p>
+                                    <a href="#" class="start-order">Заказать</a>
+                                </div>
+                            <?php } ?>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
@@ -90,16 +100,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-sm-12 col-lg-4 col-xl-4">
-                        <div class="item-wrapper">
-                            <div class="icon-wrap">
-                                <i class="fas fa-user-cog"></i>
-                            </div>
-                            
-                            <h3 class="name-service">1000 лайков</h3>
-                            <p class="old-price">Старая цена: <span>250грн</span></p>
-                            <p class="price">150 грн.</p>
-                            <a href="#" class="start-order">Заказать</a>
-                        </div>
+                        <?php if (!empty($pageData['statServ'])) : ?>
+                            <?php foreach ($pageData['statServ'] as $key => $val) { ?>
+                                <div class="item-wrapper">
+                                    <div class="icon-wrap">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+
+                                    <h3 class="name-service"><?php echo $val['name'] ?></h3>
+                                    <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
+                                    <p class="price"><?php echo $val['price'] ?> грн.</p>
+                                    <a href="#" class="start-order">Заказать</a>
+                                </div>
+                            <?php } ?>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
@@ -111,16 +125,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-sm-12 col-lg-4 col-xl-4">
-                        <div class="item-wrapper">
-                            <div class="icon-wrap">
-                                <i class="fas fa-user-cog"></i>
-                            </div>
-                            
-                            <h3 class="name-service">1000 просмотров</h3>
-                            <p class="old-price">Старая цена: <span>250грн</span></p>
-                            <p class="price">150 грн.</p>
-                            <a href="#" class="start-order">Заказать</a>
-                        </div>
+                        <?php if (!empty($pageData['whatchStat'])) : ?>
+                            <?php foreach ($pageData['whatchStat'] as $key => $val) { ?>
+                                <div class="item-wrapper">
+                                    <div class="icon-wrap">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+
+                                    <h3 class="name-service"><?php echo $val['name'] ?></h3>
+                                    <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
+                                    <p class="price"><?php echo $val['price'] ?> грн.</p>
+                                    <a href="#" class="start-order">Заказать</a>
+                                </div>
+                            <?php } ?>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
@@ -132,21 +150,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-sm-12 col-lg-4 col-xl-4">
-                        <div class="item-wrapper">
-                            <div class="icon-wrap">
-                                <i class="fas fa-user-cog"></i>
-                            </div>
-                            
-                            <h3 class="name-service">1000 просмотров</h3>
-                            <p class="old-price">Старая цена: <span>250грн</span></p>
-                            <p class="price">150 грн.</p>
-                            <a href="#" class="start-order">Заказать</a>
-                        </div>
+                        <?php if (!empty($pageData['autoLike'])) : ?>
+                            <?php foreach ($pageData['autoLike'] as $key => $val) { ?>
+                                <div class="item-wrapper">
+                                    <div class="icon-wrap">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+
+                                    <h3 class="name-service"><?php echo $val['name'] ?></h3>
+                                    <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
+                                    <p class="price"><?php echo $val['price'] ?> грн.</p>
+                                    <a href="#" class="start-order">Заказать</a>
+                                </div>
+                            <?php } ?>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </section>
     <script src="/js/jquery.min.js"></script>
 
