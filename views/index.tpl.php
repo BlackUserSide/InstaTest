@@ -11,16 +11,7 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12 col-lg-12">
-                   <div class="main-composition">
-                        <h1 class="h1">Накрутка Инстаграм</h1>
-                        asdasdasdasdsadas
-                   </div>
-                </div>
-            </div>
-        </div>
+        
     </header>
 
     <script src="/js/jquery.min.js"></script>
