@@ -8,4 +8,41 @@
   padding-bottom: 75px;
   color: #ffffff;
 }
+
+.site-header .h1 {
+  display: inline-block;
+  font-size: 46px;
+  display: inline-block;
+  font-family: 'Chelsea Market', cursive;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.site-header .main-text {
+  font-size: 22px;
+  font-family: 'Chelsea Market', cursive;
+  text-align: center;
+}
+
+.site-header .main-nav {
+  text-align: center;
+}
+
+.site-header .main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .main-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#42b94d), color-stop(#00b68d), color-stop(#00adc5), color-stop(#009ee5), color-stop(#0088e4), color-stop(#277ee6), color-stop(#4671e6), color-stop(#6163e2), color-stop(#855eea), color-stop(#a955ee), color-stop(#cb47ee), to(#ed2eea));
+  background-image: linear-gradient(to right, #42b94d, #00b68d, #00adc5, #009ee5, #0088e4, #277ee6, #4671e6, #6163e2, #855eea, #a955ee, #cb47ee, #ed2eea);
+  padding: 5px 15px;
+  border-radius: 25px;
+}
 /*# sourceMappingURL=main.css.map */
