@@ -21,5 +21,16 @@ class IndexController extends Controller
         $this->pageData['autoLike'] = $this->model->getAutoLike();
         $this->view->render($this->pageTpl, $this->pageData);
     }
-    
+    public function setOrder()
+    {
+        if (!empty($_POST)) {
+            $nickName = $_POST['nickName'];
+            $price = $_POST['price'];
+            $idService = $_POST['id'];
+            $this->model->setOrder($nickName, $price, $idService);
+            echo json_encode(array('status' => 'success'));
+        } else {
+            echo json_encode(array('status' => 'wrong'));
+        }
+    }
 }

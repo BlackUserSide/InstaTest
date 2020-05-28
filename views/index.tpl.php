@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,6 +8,8 @@
     <link rel="stylesheet" href="/css/fontawosome/css/all.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/main.css.map">
+    <link rel="stylesheet" href="/libs/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="/libs/themes/simple.css">
     <title><?php echo $pageData['title'] ?></title>
 </head>
 
@@ -59,7 +60,7 @@
                                     <h3 class="name-service"><?php echo $val['name'] ?></h3>
                                     <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
                                     <p class="price"><?php echo $val['price'] ?> грн.</p>
-                                    <a href="#" class="start-order">Заказать</a>
+                                    <a href="#" price="<?php echo $val['price'] ?>" id="<?php echo $val['id'] ?>" class="start-order">Заказать</a>
                                 </div>
                             <?php } ?>
                         <?php endif ?>
@@ -85,7 +86,7 @@
                                     <h3 class="name-service"><?php echo $val['name'] ?></h3>
                                     <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
                                     <p class="price"><?php echo $val['price'] ?> грн.</p>
-                                    <a href="#" class="start-order">Заказать</a>
+                                    <a href="#" price="<?php echo $val['price'] ?>" id="<?php echo $val['id'] ?>"  class="start-order">Заказать</a>
                                 </div>
                             <?php } ?>
                         <?php endif ?>
@@ -110,7 +111,7 @@
                                     <h3 class="name-service"><?php echo $val['name'] ?></h3>
                                     <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
                                     <p class="price"><?php echo $val['price'] ?> грн.</p>
-                                    <a href="#" class="start-order">Заказать</a>
+                                    <a href="#" price="<?php echo $val['price'] ?>" id="<?php echo $val['id'] ?>" class="start-order">Заказать</a>
                                 </div>
                             <?php } ?>
                         <?php endif ?>
@@ -135,7 +136,7 @@
                                     <h3 class="name-service"><?php echo $val['name'] ?></h3>
                                     <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
                                     <p class="price"><?php echo $val['price'] ?> грн.</p>
-                                    <a href="#" class="start-order">Заказать</a>
+                                    <a href="#" price="<?php echo $val['price'] ?>" id="<?php echo $val['id'] ?>" class="start-order">Заказать</a>
                                 </div>
                             <?php } ?>
                         <?php endif ?>
@@ -160,7 +161,7 @@
                                     <h3 class="name-service"><?php echo $val['name'] ?></h3>
                                     <p class="old-price">Старая цена: <span><?php echo $val['oldPrice'] ?>грн</span></p>
                                     <p class="price"><?php echo $val['price'] ?> грн.</p>
-                                    <a href="#" class="start-order">Заказать</a>
+                                    <a href="#" price="<?php echo $val['price'] ?>" id="<?php echo $val['id'] ?>" class="start-order">Заказать</a>
                                 </div>
                             <?php } ?>
                         <?php endif ?>
@@ -168,10 +169,25 @@
                 </div>
             </div>
         </div>
-
+        
     </section>
+    
+    <div class="hidden-form" style="display: none">
+        
+        <form class="hidden box-modal">
+            <h3 class="form-label">
+                Введите ваш nickname
+            </h3>
+            <input type="hidden" name="id" class="id-hidden" value="">
+            <input type="hidden" name="price" class="price-hidden" value="">
+            <input type="text" name="nickName" required placeholder="(@nickname)">
+            <button>Оплатить</button>
+            <div class="box-modal_close arcticmodal-close" style="font-size: 22px">X</div>
+        </form>
+    </div>
     <script src="/js/jquery.min.js"></script>
-
+    <script src="/libs/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="/js/main.min.js"></script>                           
 </body>
 
 </html>

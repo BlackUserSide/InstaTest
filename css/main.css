@@ -174,4 +174,53 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.hidden {
+  width: 350px;
+  height: 190px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hidden .form-label {
+  margin-bottom: 20px;
+  color: #045FB4;
+  font-weight: 700;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.hidden input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #045FB4;
+  height: 40px;
+  outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hidden input:focus {
+  border-bottom: 2px solid #bc1888;
+}
+
+.hidden button {
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #045FB4;
+  line-height: 38px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.hidden button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=main.css.map */
