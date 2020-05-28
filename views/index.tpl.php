@@ -10,7 +10,30 @@
     <title><?php echo $pageData['title'] ?></title>
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-6 col-lg-6 col-xs-6">
+                   <div class="main-composition">
+                       <h1 class="h1">Накрутка в инстаграмме</h1>
+                       <p>Быстро | Качественно|Надежно</p>
+
+                   </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-6 col-lg-6 col-xs-6">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#">Лайки</a></li>
+                            <li><a href="#">Подписчики</a></li>
+                            <li><a href="#">Статистика</a></li>
+                            <li><a href="#">Просмотры</a></li>
+                            <li><a href="#">Автолайки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <script src="/js/jquery.min.js"></script>
     
 </body>
