@@ -7,6 +7,7 @@
   padding-top: 75px;
   padding-bottom: 75px;
   color: #ffffff;
+  text-align: center;
 }
 
 .site-header .h1 {
@@ -22,6 +23,14 @@
   font-size: 22px;
   font-family: 'Chelsea Market', cursive;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.site-header i {
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  display: inline-block;
 }
 
 .site-header .main-nav {
@@ -34,15 +43,135 @@
   padding: 0;
 }
 
+.site-header .main-nav ul li {
+  margin-bottom: 5px;
+}
+
 .site-header .main-nav ul li a {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
   font-size: 22px;
   margin-bottom: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#42b94d), color-stop(#00b68d), color-stop(#00adc5), color-stop(#009ee5), color-stop(#0088e4), color-stop(#277ee6), color-stop(#4671e6), color-stop(#6163e2), color-stop(#855eea), color-stop(#a955ee), color-stop(#cb47ee), to(#ed2eea));
-  background-image: linear-gradient(to right, #42b94d, #00b68d, #00adc5, #009ee5, #0088e4, #277ee6, #4671e6, #6163e2, #855eea, #a955ee, #cb47ee, #ed2eea);
+  border: 2px solid #ffffff;
+  width: 170px;
+  height: 45px;
+  border-radius: 10px;
+  -webkit-box-shadow: 36px 17px 20px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 36px 17px 20px -20px rgba(0, 0, 0, 0.75);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.site-header .main-nav ul li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.bg-lock {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.logo-nav {
+  display: inline-block;
+  padding: 0;
+  margin: 2px;
+  font-size: 22px;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.main-parse {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top-line-category {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.top-line-category .h1 {
+  display: inline-block;
+  font-family: 'Chelsea Market', cursive;
+  font-weight: 800;
+  font-size: 52px;
+}
+
+.item-wrapper {
+  text-align: center;
+  width: 100%;
+  border: 4px solid #045FB4;
+  padding: 45px 20px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-wrapper .icon-wrap {
+  width: 100%;
+  background-color: #045FB4;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  padding: 5px 0;
+}
+
+.item-wrapper .icon-wrap i {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.item-wrapper .name-service {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.item-wrapper .price {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item-wrapper .old-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF4000;
+}
+
+.item-wrapper .old-price span {
+  text-decoration: line-through;
+}
+
+.item-wrapper .start-order {
+  display: inline-block;
+  font-size: 22;
+  text-decoration: none;
+  color: #000000;
   padding: 5px 15px;
-  border-radius: 25px;
+  background-color: #045FB4;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 32px;
+  border-radius: 10px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.item-wrapper .start-order:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.category-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
