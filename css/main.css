@@ -223,4 +223,133 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.admin-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d71ab3), color-stop(#ce14b7), color-stop(#c310ba), color-stop(#b80fbe), to(#ac10c2));
+  background-image: linear-gradient(to right bottom, #d71ab3, #ce14b7, #c310ba, #b80fbe, #ac10c2);
+}
+
+.admin-header h3 {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.main-admin {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.main-admin ul {
+  list-style-type: none;
+}
+
+.main-admin ul li {
+  display: inline-block;
+}
+
+.main-admin ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  background-color: #045FB4;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.main-admin ul li a:hover {
+  background: #d71ab3;
+}
+
+.main-service {
+  width: 100%;
+}
+
+.main-service .header-table {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.main-service .header-table td {
+  padding: 10px;
+  border-right: 2px solid #000;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.main-service .load-service {
+  border: 2px solid #045FB4;
+  text-align: center;
+}
+
+.main-service .load-service tr {
+  height: 35px;
+}
+
+.main-service .load-service td {
+  border-bottom: 2px solid #045FB4;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.main-service .load-service a {
+  text-decoration: none;
+  color: #d71ab3;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-service .load-service a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #d71ab3;
+  display: inline-block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.main-service .load-service a:hover::after {
+  width: 100%;
+}
+
+.remove-service {
+  text-align: center;
+}
+
+.remove-service input {
+  width: 70%;
+  height: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Chelsea Market', cursive;
+  text-align: center;
+}
+
+.remove-service button {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #045FB4;
+  color: #ffffff;
+  outline: none;
+}
+
+.remove-service a {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d71ab3;
+  color: #ffffff;
+  outline: none;
+}
 /*# sourceMappingURL=main.css.map */
