@@ -15,13 +15,10 @@ class LoginModel extends Model
             $res[$row['id']] = $row;
         }
         if(!empty($res)) {
-            return true;
-            foreach($res as $key => $val) {
-                $_SESSION['user']['nickName'] = $val['nickName'];
-                $_SESSION['user']['email'] = $val['email'];
-            }
+            return $res;
+            
         } else {
-            return false;
+            return null;
         }
     }
 }

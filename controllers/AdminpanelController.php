@@ -13,7 +13,7 @@ class AdminpanelController extends Controller
 
     public function index()
     {
-        if (!isset($_SESSION)) {
+        if (!isset($_SESSION['user'])) {
             header('Location: /');
         }
         $this->pageData['title'] = 'Админ панель';
