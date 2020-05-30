@@ -28,20 +28,20 @@ class AdminpanelController extends Controller
     }
     public function updateService()
     {
-        if(!empty($_POST)) {
+        if (!empty($_POST)) {
             $id = $_POST['id'];
             $name = $_POST['name'];
             $price = $_POST['price'];
             $oldPrice = $_POST['oldPrice'];
             $this->model->setOldPrice($id, $name, $price, $oldPrice);
             echo json_encode(array('status' => 'success'));
-        } else{
+        } else {
             echo json_encode(array('status' => 'wrong'));
         }
     }
     public function delProd()
     {
-        if(!empty($_POST)){
+        if (!empty($_POST)) {
             $id = $_POST['id'];
             $this->model->delProd($id);
             echo json_encode(array('status' => 'success'));
@@ -49,7 +49,22 @@ class AdminpanelController extends Controller
             echo json_encode(array('status' => 'wrong'));
         }
     }
-    public function logout(){
+    public function logout()
+    {
         session_destroy();
+        header('Location: /');
+    }
+    public function addService()
+    {
+        if(!empty($_POST)) {
+            $name = $_POST['name'];
+            $price = $_POST['price'];
+            $category = $_POST['category'];
+            $oldPrice = $_POST['oldPrice'];
+            $this->model->addService($name, $price, $category, $oldPrice);
+            echo json_encode(array('status' => 'success'));
+        } else {
+            echo json_encode(array('status' => 'wrong'));
+        }
     }
 }

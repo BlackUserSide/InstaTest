@@ -40,4 +40,15 @@ class AdminpanelModel extends Model
         $stmt->bindValue('id', $id, PDO::PARAM_STR);
         $stmt->execute();
     }
+    public function addService($name, $price, $category, $oldPrice)
+    {
+        $sql = 'INSERT INTO service (name, price, oldPrice, category)
+        VALUES (:name, :price, :oldPrice, :category)';
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue('name', $name, PDO::PARAM_STR);
+        $stmt->bindValue('price', $price, PDO::PARAM_STR);
+        $stmt->bindValue('oldPrice', $oldPrice, PDO::PARAM_STR);
+        $stmt->bindValue('category', $category, PDO::PARAM_STR);
+        $stmt->execute();
+    }
 }

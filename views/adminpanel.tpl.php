@@ -48,6 +48,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
                         <div class="table-wrapper-service">
+                            <a href="#" class="add-servise">Добавить услугу</a>
                             <table class="main-service">
                                 <thead class="header-table">
                                     <tr>
@@ -59,7 +60,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="load-service">
-                                    <?php foreach($pageData['serviceAdm'] as $key => $val) {?>
+                                    <?php foreach ($pageData['serviceAdm'] as $key => $val) { ?>
                                         <tr>
                                             <td><?php echo $val['name'] ?></td>
                                             <td><?php echo $val['price'] ?>грн</td>
@@ -84,11 +85,11 @@
                     <input type="hidden" class="oldpriceServ" name="oldpriceServ" value="">
                     <input type="hidden" class="oldoldPrice" name="oldoldPrice" value="">
                     <p>Название</p>
-                    <input type="text" name="name"  class="nameService" id="nameService" >
+                    <input type="text" name="name" class="nameService" id="nameService">
                     <p>Новая цена</p>
-                    <input type="text" name="price"  class="priceServ" id="priceServ" >
+                    <input type="text" name="price" class="priceServ" id="priceServ">
                     <p>Старая цена</p>
-                    <input type="text" name="oldPrice"  class="oldPrice" id="oldPrice" ><br>
+                    <input type="text" name="oldPrice" class="oldPrice" id="oldPrice"><br>
                     <button class="save-btn">Сохранить</button>
                     <a href="#" class="dell-btn">Удалить</a>
                     <div class="box-modal_close arcticmodal-close" style="font-size: 22px">X</div>
@@ -97,6 +98,24 @@
         </div>
 
     </section>
+    <div style="display: none">
+        
+        <form class="add-form box-modal">
+            <h3 class="h3-add">Добавить услугу</h3>
+            <input type="text" name="name" placeholder="Название" required>
+            <input type="text" name="price"placeholder="Цена" required>
+            <input type="text" name="oldPrice"placeholder="Старая цена" required>
+            <select name="category" id="Category">
+                <option value="1">Лайки</option>
+                <option value="2">Подписчики</option>
+                <option value="3">Статистика</option>
+                <option value="4">Просмотры</option>
+                <option value="5">АвтоЛайки</option>
+            </select><br>
+            <button>Добавить</button>
+            <div class="box-modal_close arcticmodal-close" style="font-size: 22px">X</div>
+        </form>
+    </div>
     <script src="/js/jquery.min.js"></script>
     <script src="/libs/jquery.arcticmodal-0.3.min.js"></script>
     <script src="/js/adminpanel.js"></script>

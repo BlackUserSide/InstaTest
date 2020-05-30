@@ -56,7 +56,7 @@ $(document).ready(function () {
             data: {id: id,name: name, price: price, oldPrice: oldPrice},
             dataType: "json",
             success: function (data) {
-                
+                location.reload();
                 $('.box-modal_close').trigger('click')
             }
         });
@@ -70,7 +70,8 @@ $(document).ready(function () {
             data: {id: id},
             dataType: "json",
             success: function (data) {
-                
+                $('.box-modal_close').trigger('click')
+                location.reload();
             }
         });
     })
@@ -80,7 +81,33 @@ $(document).ready(function () {
             url: "/adminpanel/logout",
             dataType: "dataType",
             success: function (response) {
-                $(location).attr('href', '/');
+                location.reload();
+            }
+        });
+    })
+    $('.add-servise').click(function(e) {
+        e.preventDefault()
+        $('.add-form').arcticmodal();
+    })
+    $('.add-form ').submit(function(e) {
+        e.preventDefault();
+        let form = $(this)
+        $.ajax({
+            type: "post",
+            url: '/adminpanel/addService',
+            data: form.serialize(),
+            dataType: "json",
+            success: function (data) {
+                if(data.status === 'success') {
+                    $('.box-modal_close').trigger('click')
+                    location.reload();
+                } else {
+                    alert('Что то не так! Звони')
+                    setTimeout(function(){
+                        $('.box-modal_close').trigger('click')
+                        location.reload();
+                    })
+                }
             }
         });
     })
