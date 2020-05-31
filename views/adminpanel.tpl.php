@@ -32,8 +32,8 @@
                 <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12">
                     <nav class="admin-nav">
                         <ul>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Заказы</a></li>
+                            <li><a href="/adminpanel">Услуги</a></li>
+                            <li><a href="/order">Заказы</a></li>
                             <li><a href="#" class="log-out">Выйти</a></li>
                         </ul>
                     </nav>

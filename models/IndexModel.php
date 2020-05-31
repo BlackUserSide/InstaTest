@@ -53,14 +53,15 @@ class IndexModel extends Model
         }
         return $result;
     }
-    public function setOrder($nickName, $price, $idService)
+    public function setOrder($nickName, $price, $name, $date)
     {
-        $sql = "INSERT INTO orderservice (idService, nickName, price, status)
-        VALUES (:id, :nick, :price, 0)";
+        $sql = "INSERT INTO orderservice (nameService, nickName, price, status, dataOrder, dataChangeStatus, statusAdmin)
+        VALUES (:name, :nick, :price, 0, :data, 0, 0)";
         $stmt = $this->db->prepare($sql);
-        $stmt->bindValue('id', $idService, PDO::PARAM_STR);
+        $stmt->bindValue('name', $name, PDO::PARAM_STR);
         $stmt->bindValue('nick', $nickName, PDO::PARAM_STR);
         $stmt->bindValue('price', $price, PDO::PARAM_STR);
+        $stmt->bindValue('data', $date, PDO::PARAM_STR);
         $stmt->execute();
     }
 }

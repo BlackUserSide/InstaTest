@@ -25,9 +25,10 @@ class IndexController extends Controller
     {
         if (!empty($_POST)) {
             $nickName = $_POST['nickName'];
+            $date = $_POST['dataOrder'];
             $price = $_POST['price'];
-            $idService = $_POST['id'];
-            $this->model->setOrder($nickName, $price, $idService);
+            $name = $_POST['id'];
+            $this->model->setOrder($nickName, $price, $name, $date);
             echo json_encode(array('status' => 'success'));
         } else {
             echo json_encode(array('status' => 'wrong'));
