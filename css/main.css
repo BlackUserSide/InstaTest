@@ -1,227 +1,393 @@
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
-.site-header {
-  background: #f09433;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+body {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  color: #ffffff;
-  text-align: center;
+  margin: 0;
 }
 
-.site-header .h1 {
-  display: inline-block;
-  font-size: 46px;
-  display: inline-block;
+.site-header {
+  width: 100%;
+  position: relative;
+  min-height: 760px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Chelsea Market', cursive;
-  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.main-header .logo-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-header .logo-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-header .logo-link h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.main-header .logo-link h1 i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.main-header .main-nav {
+  display: inline-block;
+}
+
+.main-header .main-nav ul {
+  margin-left: 100px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-header .main-nav ul li {
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 25px;
+}
+
+.main-header .main-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-header .main-nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.main-header .main-nav ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-header .main-nav ul li a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.sticky {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Chelsea Market', cursive;
+  position: fixed;
+  height: 70px;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  width: 100%;
+}
+
+.sticky .logo-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky .logo-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky .logo-link h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.sticky .logo-link h1 i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sticky .main-nav {
+  display: inline-block;
+}
+
+.sticky .main-nav ul {
+  margin-left: 100px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sticky .main-nav ul li {
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 25px;
+}
+
+.sticky .main-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.sticky .main-nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  display: inline-block;
+  background-color: #000;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.sticky .main-nav ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky .main-nav ul li a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.text-composition {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 120px;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.text-composition .h1 {
+  font-size: 75px;
   margin-bottom: 25px;
 }
 
-.site-header .main-text {
-  font-size: 22px;
-  font-family: 'Chelsea Market', cursive;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.site-header i {
-  text-align: center;
-  color: #ffffff;
+.text-composition p {
   font-size: 32px;
-  display: inline-block;
 }
 
-.site-header .main-nav {
-  text-align: center;
-}
-
-.site-header .main-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-header .main-nav ul li {
-  margin-bottom: 5px;
-}
-
-.site-header .main-nav ul li a {
-  text-decoration: none;
+.iccon-down {
+  font-size: 60px;
   color: #ffffff;
-  display: inline-block;
-  font-size: 22px;
-  margin-bottom: 10px;
-  border: 2px solid #ffffff;
-  width: 170px;
-  height: 45px;
-  border-radius: 10px;
-  -webkit-box-shadow: 36px 17px 20px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 36px 17px 20px -20px rgba(0, 0, 0, 0.75);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.site-header .main-nav ul li a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.bg-lock {
-  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
+  z-index: 2;
+  left: 48%;
+  bottom: 10%;
+  -webkit-animation: 1s ease infinite opacity;
+          animation: 1s ease infinite opacity;
+}
+
+.div-lock {
   width: 100%;
   height: 100%;
+  position: absolute;
   top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.logo-nav {
-  display: inline-block;
-  padding: 0;
-  margin: 2px;
-  font-size: 22px;
-  font-family: 'Chelsea Market', cursive;
-}
-
-.main-parse {
+section {
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #F0F0F0;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-.top-line-category {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-.top-line-category .h1 {
-  display: inline-block;
+.premos-wrapper {
   font-family: 'Chelsea Market', cursive;
-  font-weight: 800;
-  font-size: 52px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.premos-wrapper .logos-wrapper {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding-top: 22px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.premos-wrapper .logos-wrapper i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.top-line {
+  text-align: center;
+  font-family: 'Chelsea Market', cursive;
+  padding-bottom: 45px;
+}
+
+.top-line p {
+  display: inline-block;
+  width: 40%;
 }
 
 .item-wrapper {
-  text-align: center;
-  width: 100%;
-  border: 4px solid #045FB4;
-  padding: 45px 20px;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.item-wrapper .icon-wrap {
-  width: 100%;
-  background-color: #045FB4;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  padding: 5px 0;
-}
-
-.item-wrapper .icon-wrap i {
-  font-size: 22px;
-  color: #ffffff;
-}
-
-.item-wrapper .name-service {
-  font-family: 'Chelsea Market', cursive;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.item-wrapper .price {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.item-wrapper .old-price {
-  font-size: 18px;
-  font-weight: 500;
-  color: #FF4000;
-}
-
-.item-wrapper .old-price span {
-  text-decoration: line-through;
-}
-
-.item-wrapper .start-order {
+  background-color: #fff;
   display: inline-block;
-  font-size: 22;
-  text-decoration: none;
-  color: #000000;
-  padding: 5px 15px;
-  background-color: #045FB4;
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 32px;
-  border-radius: 10px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.item-wrapper .start-order:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.category-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.hidden {
-  width: 350px;
-  height: 190px;
+  width: 100%;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.74);
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.74);
+  border-radius: 10px;
+}
+
+.item-wrapper .price-composition p {
+  margin: 0;
+}
+
+.item-wrapper .price-composition .old-price {
+  color: #FF2B2B;
+  text-decoration: line-through;
+  font-size: 24px;
+}
+
+.item-wrapper .price-composition .price {
+  font-family: 'Chelsea Market', cursive;
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.item-wrapper .name-composition {
+  font-family: 'Chelsea Market', cursive;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.item-wrapper .add-service {
+  display: inline-block;
+  background-color: #22268F;
+  font-size: 22px;
+  padding: 7px 22px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.item-wrapper .add-service:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+.site-footer {
+  font-family: 'Chelsea Market', cursive;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+  background-color: #1C1C1C;
+}
+
+.site-footer a {
+  font-size: 46px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
+
+.site-footer p {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.hidden-form {
   text-align: center;
 }
 
-.hidden .form-label {
-  margin-bottom: 20px;
-  color: #045FB4;
-  font-weight: 700;
-  font-family: 'Chelsea Market', cursive;
-}
-
-.hidden input {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #045FB4;
-  height: 40px;
-  outline: none;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+.hidden-form .input-label {
   display: inline-block;
-  margin-bottom: 20px;
+  position: relative;
+  height: 50px;
+  padding-top: 15px;
 }
 
-.hidden input:focus {
-  border-bottom: 2px solid #bc1888;
-}
-
-.hidden button {
-  font-size: 22px;
-  color: #ffffff;
-  background-color: #045FB4;
-  line-height: 38px;
-  border-radius: 5px;
-  outline: none;
+.hidden-form .input-label input {
   border: none;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding: 5px 0;
+  z-index: 1;
 }
 
-.hidden button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.hidden-form .input-label p {
+  top: 10px;
+  margin: 0;
+  z-index: 0;
+  position: absolute;
+}
+
+.hidden-form button {
+  display: inline-block;
+  background-color: #22268F;
+  font-size: 22px;
+  padding: 7px 22px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
 }
 
 .admin-header {

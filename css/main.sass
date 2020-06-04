@@ -1,168 +1,304 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
     
-.site-header
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+body
     position: relative
-    padding-top: 75px
-    padding-bottom: 75px
-    color: #ffffff
-    text-align: center
-    .h1
-        display: inline-block
-        font-size: 46px
-        display: inline-block
-        font-family: 'Chelsea Market', cursive;
-        font-weight: 700
-        margin-bottom: 25px
-    .main-text
-        font-size: 22px
-        font-family: 'Chelsea Market', cursive;
-        text-align: center
-        margin-bottom: 20px
-    i
-        text-align: center
+    margin: 0
+
+.site-header
+    width: 100%
+    position: relative
+    min-height: 760px
+    height: 100%
+    overflow: hidden
+.main-header
+    padding-top: 10px
+    padding-bottom: 10px
+    font-family: 'Chelsea Market', cursive
+    position: relative
+    z-index: 2
+    .logo-link
+        text-decoration: none
         color: #ffffff
-        font-size: 32px
-        display: inline-block
-    .main-nav
-        text-align: center
-        ul
-            list-style-type: none
+        &:hover
+            text-decoration: none
+            color: #ffffff
+        h1
+            i
+                display: inline-block
+                margin-right: 10px
             margin: 0
+            font-size: 36px
+    .main-nav
+       
+        display: inline-block
+        ul
+            
+            margin-left: 100px
+            margin-bottom: 0
             padding: 0
+            list-style-type: none
             li
-                margin-bottom: 5px
+                display: inline-block
+                font-size: 22px
+                margin-right: 25px
                 a
                     text-decoration: none
                     color: #ffffff
-                    display: inline-block
-                    font-size: 22px
-                    margin-bottom: 10px
-                    border: 2px solid #ffffff
-                    width: 170px
-                    height: 45px
-                    border-radius: 10px
-                    -webkit-box-shadow: 36px 17px 20px -20px rgba(0,0,0,0.75);
-                    -moz-box-shadow: 36px 17px 20px -20px rgba(0,0,0,0.75);
-                    box-shadow: 36px 17px 20px -20px rgba(0,0,0,0.75);
-                    transition: .5s ease
+                    position: relative
+                    overflow: hidden
+                    &::after
+                        content: ''
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        width: 0%
+                        height: 2px
+                        display: inline-block
+                        background-color: #fff
+                        transition: .5s ease
+                        opacity: 0
                     &:hover
-                        transform: scale(1.1)
-.bg-lock
-    background-color: rgba(0, 0, 0, .50);
+                        text-decoration: none
+                        color: #ffffff
+                        &::after
+                            width: 100%
+                            opacity: 1
+.sticky
+    padding-top: 10px
+    padding-bottom: 10px
+    font-family: 'Chelsea Market', cursive
+    position: fixed
+    height: 70px
+    background-color: #ffffff
+    top: 0
+    left: 0
+    z-index: 3
+    opacity: 0
+    width: 100%
+    .logo-link
+        text-decoration: none
+        color: #000
+        &:hover
+            text-decoration: none
+            color: #000
+        h1
+            i
+                display: inline-block
+                margin-right: 10px
+            margin: 0
+            font-size: 36px
+    .main-nav
+       
+        display: inline-block
+        ul
+            
+            margin-left: 100px
+            margin-bottom: 0
+            padding: 0
+            list-style-type: none
+            li
+                display: inline-block
+                font-size: 22px
+                margin-right: 25px
+                a
+                    text-decoration: none
+                    color: #000
+                    position: relative
+                    overflow: hidden
+                    &::after
+                        content: ''
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        width: 0%
+                        height: 2px
+                        display: inline-block
+                        background-color: #000
+                        transition: .5s ease
+                        opacity: 0
+                    &:hover
+                        text-decoration: none
+                        color: #000
+                        &::after
+                            width: 100%
+                            opacity: 1
+.text-composition
+    position: relative
+    z-index: 2
+    color: #ffffff
+    text-align: center
+    padding-top: 120px
+    font-family: 'Chelsea Market', cursive
+    .h1
+        font-size: 75px
+        margin-bottom: 25px
+    p
+        font-size: 32px
+.iccon-down
+    font-size: 60px
+    color: #ffffff
     position: absolute
+    z-index: 2
+    left: 48%
+    bottom: 10%
+    animation: 1s ease infinite opacity
+
+
+.div-lock
     width: 100%
     height: 100%
-    top: 0                    
-.logo-nav
-    display: inline-block
-    padding: 0
-    margin: 2px
-    font-size: 22px
-    font-family: 'Chelsea Market', cursive;
-.main-parse
-    position: relative
-    overflow: hidden
-    padding-top: 20px
-    padding-bottom: 20px
-.top-line-category
-    padding-top: 10px
-    padding-bottom: 30px
-    text-align: center
-    .h1
-        display: inline-block
-        font-family: 'Chelsea Market', cursive
-        font-weight: 800
-        font-size: 52px
-.item-wrapper
-    text-align: center
-    width: 100%
-    border: 4px solid #045FB4
-    padding: 45px 20px
-    border-radius: 15px
-    position: relative
-    overflow: hidden
-    .icon-wrap
-        width: 100%
-        background-color: #045FB4
-        position: absolute
-        left: 0
-        top: 0px
-        padding: 5px 0
-        i
-            font-size: 22px
-            color: #ffffff
-    .name-service
-        font-family: 'Chelsea Market', cursive
-        font-size: 22px
-        font-weight: 700
-        margin-bottom: 10px
-    .price
-        font-size: 18px
-        font-weight: 500
-    .old-price
-        font-size: 18px
-        font-weight: 500
-        color: #FF4000
-        span
-            text-decoration: line-through
-
-    .start-order
-        display: inline-block
-        font-size: 22
-        text-decoration: none
-        color: #000000
-        padding: 5px 15px
-        background-color: #045FB4
-        color: #ffffff
-        font-size: 22px
-        line-height: 32px
-        border-radius: 10px
-        transition: .5s ease
-        &:hover
-            transform: scale(1.1)
-.category-wrapper
-    padding-top: 30px
-    padding-bottom: 30px
-.hidden
-    width: 350px
-    height: 190px
-    padding-top: 20px
-    padding-bottom: 20px
-    border-radius: 15px
-    text-align: center
-    .form-label
-        margin-bottom: 20px
-        color: #045FB4
-        font-weight: 700
-        font-family: 'Chelsea Market', cursive
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(#000, .5)
+    z-index: 1
     
-    input
-        width: 100%
-        border: none
-        border-bottom: 2px solid #045FB4
-        height: 40px
-        outline: none
-        transition: .3s ease
+section
+    position: relative
+    overflow: hidden
+    background-color: #F0F0F0
+    padding-top: 45px
+    padding-bottom: 45px
+    
+
+
+.premos-wrapper
+    font-family: 'Chelsea Market', cursive
+    display: inline-block
+    text-align: center
+    margin-bottom: 45px
+    .logos-wrapper
         display: inline-block
-        margin-bottom: 20px
-        &:focus
-            border-bottom: 2px solid #bc1888
-    button
+        margin-bottom: 10px
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        padding-top: 22px
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        i
+            font-size: 32px
+            color: #ffffff
+.top-line
+    text-align: center
+    font-family: 'Chelsea Market', cursive
+   
+    padding-bottom: 45px
+    p
+        display: inline-block
+        width: 40%
+
+.item-wrapper
+   
+    background-color: #fff
+    display: inline-block
+    width: 100%
+    text-align: center
+    padding-top: 20px
+    padding-bottom: 20px
+    -webkit-box-shadow: 4px 4px 14px -6px rgba(0,0,0,0.74);
+    -moz-box-shadow: 4px 4px 14px -6px rgba(0,0,0,0.74);
+    box-shadow: 4px 4px 14px -6px rgba(0,0,0,0.74);
+    border-radius: 10px
+    .price-composition
+        p
+            margin: 0
+        .old-price
+            color: #FF2B2B
+            text-decoration: line-through
+            font-size: 24px
+        .price
+            font-family: 'Chelsea Market', cursive
+            color: #000
+            font-size: 22px
+            font-weight: 700
+            margin-bottom: 15px
+    .name-composition
+        font-family: 'Chelsea Market', cursive
+        color: #000
+        font-size: 24px
+        font-weight: 500
+    .add-service
+        display: inline-block
+        background-color: #22268F
         font-size: 22px
-        color: #ffffff
-        background-color: #045FB4
-        line-height: 38px
+        padding: 7px 22px
         border-radius: 5px
-        outline: none
-        border: none
-        transition: .5s ease
+        color: #ffffff
+        text-decoration: none
         &:hover
-            transform: scale(1.1)
+            text-decoration: none
+            color: #ffffff
+
+
+
+@keyframes opacity
+    0%
+        opacity: 1
+    50%
+        opacity: .7
+    100%
+        opacity: .5
+
+.site-footer
+    font-family: 'Chelsea Market', cursive
+    position: relative
+    padding-top: 45px
+    padding-bottom: 45px
+    text-align: center
+    background-color: #1C1C1C
+    a
+        font-size: 46px
+        color: #ffffff
+        text-decoration: none
+        display: inline-block
+        margin-bottom: 25px
+        &:hover
+            
+            color: #ffffff
+    p
+        font-size: 32px
+        color: #ffffff
+
+.hidden-form
+    text-align: center
+    .input-label
+        display: inline-block
+        position: relative
+        
+        height: 50px
+        padding-top: 15px
+        input
+            
+            border: none
+            border-bottom: 2px solid #000
+            outline: none
+            
+            padding: 5px 0
+            z-index: 1
+        p
+            top: 10px
+            margin: 0
+            z-index: 0
+            position: absolute
+    button
+        display: inline-block
+        background-color: #22268F
+        font-size: 22px
+        padding: 7px 22px
+        border-radius: 5px
+        color: #ffffff
+        text-decoration: none
+        border: none
+
+
+
+
+
+
+
 .admin-header
     padding-top: 5px
     padding-bottom: 5px
