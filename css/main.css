@@ -622,4 +622,48 @@ section {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.link-cont-wrapper {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.link-cont-wrapper a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 25px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.link-cont-wrapper a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.stick {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.stick a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 25px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.stick a:hover {
+  text-decoration: none;
+  color: #000000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=main.css.map */
