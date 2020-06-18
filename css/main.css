@@ -328,6 +328,7 @@ section {
 }
 
 .site-footer {
+  overflow: hidden;
   font-family: 'Chelsea Market', cursive;
   position: relative;
   padding-top: 45px;
@@ -665,5 +666,152 @@ section {
   color: #000000;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.mobile-header {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background-color: #000;
+  z-index: 3;
+}
+
+.hamburger {
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+}
+
+.mobile-nav {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  bottom: 200px;
+  width: 100%;
+  z-index: 3;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.mobile-nav .close-nav-mobile {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+}
+
+.mobile-nav ul {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  left: 20%;
+  list-style-type: none;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.mobile-nav ul li {
+  text-align: center;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.h1-logo-mobile {
+  position: absolute;
+  font-size: 30px;
+  left: 30%;
+  z-index: 3;
+  top: 5px;
+}
+
+.logo-mobile a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-mobile a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+  .main-header .main-nav ul {
+    margin: 0;
+  }
+  .main-header .main-nav ul li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .main-header .main-nav ul li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .sticky {
+    display: none;
+  }
+  .main-header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .h1-logo-mobile {
+    left: 40%;
+  }
+  .mobile-nav ul {
+    left: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header .logo-wrapper {
+    text-align: center;
+  }
+  .main-header .logo-link h1 {
+    display: inline-block;
+  }
+  .main-header .main-nav ul {
+    margin-left: 0;
+  }
+  .sticky {
+    display: none;
+  }
+  .main-header {
+    display: none;
+  }
+  .iccon-down {
+    display: none;
+  }
+  .text-composition .h1 {
+    font-size: 40px;
+  }
+  .text-composition p {
+    font-size: 30px;
+  }
+  .site-footer a {
+    font-size: 26px;
+  }
+  .top-line p {
+    width: 100%;
+  }
+  .item-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1061px) {
+  .mobile-header {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

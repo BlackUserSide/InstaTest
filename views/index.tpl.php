@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/libs/themes/simple.css">
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/css/fontawosome/css/all.css">
+    <link rel="stylesheet" href="/libs/hamburgers-master/dist/hamburgers.min.css">
 
     <title><?php echo $pageData['title'] ?></title>
 </head>
@@ -19,14 +20,14 @@
         <div class="main-header ">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-3 col-md-3 col-sm-3 col-xs-3 col-lg-3">
+                    <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 col-lg-3">
                         <div class="logo-wrapper ">
                             <a href="#main" class="logo-link menu-link">
                                 <h1 class="h1-logo"><i class="fab fa-instagram"></i>InstaTop</h1>
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-9 col-lg-9 col-d-9 col-sm-9 col-xs-9">
+                    <div class="col-xl-9 col-lg-9 col-d-9 col-sm-12 col-xs-12">
                         <nav class="main-nav ">
                             <ul>
                                 <li><a href="#liks" class="menu-link">Лайки</a></li>
@@ -43,6 +44,28 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mobile-header">
+            <div class="logo-mobile">
+                <a href="#main" class="logo-link menu-link">
+                    <h1 class="h1-logo-mobile"><i class="fab fa-instagram"></i>InstaTop</h1>
+                </a>
+            </div>
+            <div class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <a href="" class="close-nav-mobile">X</a>
+                <ul>
+                    <li><a href="#liks" class="menu-link">Лайки</a></li>
+                    <li><a href="#subs" class="menu-link">Подписчики</a></li>
+                    <li><a href="#whatch" class="menu-link">Просмотры</a></li>
+                    <li><a href="#stat" class="menu-link">Статистика</a></li>
+                    <li><a href="#auto" class="menu-link">Автолайки</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="header-composition">
             <div class="container">
@@ -334,7 +357,7 @@
                 <input type="hidden" name="dataOrder" value="" id="dataOrder">
                 <input type="hidden" name="price" value="" id="priceInp">
                 <input type="hidden" name="id" value="" id="nameInp">
-                
+
                 <div class="input-label">
                     <p>Никнейм или ссылка</p>
                     <input type="text" name="nickName">
