@@ -346,6 +346,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <a href="tel:+74951287759">+74951287759</a><br>
                     <a href="mail:instatop.store@gmail.com">instatop.store@gmail.com</a>
+                    <a href="#" class="user-agent_mode">Пользовательское соглашение</a>
                     <p>г.Москва, Пресненская наб., 12</p>
                 </div>
             </div>
@@ -362,8 +363,7 @@
                     <p>Никнейм или ссылка</p>
                     <input type="text" name="nickName">
                 </div><br>
-                <input type="checkbox" required>
-                <label><a href="#" class="user-agent_mode">Пользовательское соглашение</a></label><br>
+                
                 <div class="box-modal_close arcticmodal-close" style="font-size: 22px;">X</div>
                 <button>Оплатить</button>
 
@@ -439,6 +439,7 @@
             <div class="box-modal_close arcticmodal-close" style="font-size: 22px;">X</div>
         </div>
     </div>
+    <a href="#" class="test">ssss</a>
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/libs/jquery.arcticmodal-0.3.min.js"></script>
     <script src="/libs/parallax.js-1.5.0/parallax.min.js"></script>

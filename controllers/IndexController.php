@@ -34,4 +34,16 @@ class IndexController extends Controller
             echo json_encode(array('status' => 'wrong'));
         }
     }
+    public function getSignature ()
+    {
+        if(!empty($_POST)) {
+            $account = $_POST['accaunt'];
+            $desc = $_POST['desc'];
+            $secretKey = $_POST['secret'];
+            $sum = $_POST['sum'];
+            $hashStr = $account.'{up}'.$desc.'{up}'.$sum.'{up}'.$secretKey;
+            $result =  hash('sha256', $hashStr);
+            echo json_encode($result);
+        }
+    }
 }
